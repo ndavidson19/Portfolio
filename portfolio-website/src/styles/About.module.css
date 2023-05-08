@@ -1,0 +1,39 @@
+/* components/About.module.css */
+
+.aboutContainer {
+    min-height: 100vh; /* Add this line to make the component take up the whole screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* Adjust this value to change the space between the text and image */
+}
+.text {
+    /* Add the following lines for the animation */
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 1s forwards;
+  }
+  .textContainer {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .img {
+    width: 100%;
+    max-width: 400px; /* Adjust this value to your desired maximum image width */
+    height: auto;
+    border-radius: 50%; /* Add this line to make the image an oval */
+    object-fit: cover; /* Add this line to maintain the aspect ratio of the image */
+  }
+  
+  @keyframes slide-in {
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
