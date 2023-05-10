@@ -16,7 +16,7 @@ export const About: React.FC = () => {
         <div className={`${styles.textContainer} ${animate ? styles.text : ''}`}>
             <h2>Nicholas Davidson</h2>
             <p>
-                Full Stack Software Engineers
+                Full Stack Software Engineer, based in San Francisco.
             </p>
           </div>
           <div className={styles.imageContainer}>

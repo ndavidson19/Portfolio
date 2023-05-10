@@ -1,0 +1,117 @@
+/* components/AboutMe/AboutMe.module.css */
+
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .personalDescription {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: stretch;
+  }
+  .resumeDownloadIcon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .resumeDownloadIcon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jobSection {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+    flex-grow: 1; /* Add this line */
+    display: flex; /* Add this line */
+    align-items: center; /* Add this line */
+    justify-content: center; /* Add this line */
+  }
+  
+  .jobSection:hover {
+    background-color: #e0e0e0;
+}
+  
+  .jobSection.selected:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 16px;
+    background-color: #0070f3;
+  }
+  
+  .jobDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+  }
+  
+  .jobTitle {
+    font-weight: bold;
+  }
+  
+  .jobDates {
+    font-style: italic;
+  }
+  
+  .jobAchievements {
+    padding-left: 20px;
+  }
+  

@@ -1,0 +1,69 @@
+/* components/Research/Research.module.css */
+
+.researchContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    position: relative;
+    box-sizing: border-box;
+    flex: 0 0 calc(100% - 60px);
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      flex: 0 0 calc(50% - 60px);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card {
+      flex: 0 0 calc(33.3333% - 60px);
+    }
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease;
+  }
+  
+  .card:hover img {
+    filter: blur(2px);
+  }
+  
+  .cardText {
+    padding: 16px;
+  }
+  
+  .showMoreBtn {
+    display: block;
+    width: 50%;
+    margin: 16px auto;
+    padding: 8px 16px;
+    text-align: center;
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+  
