@@ -2,10 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/About.module.css';
+import { Contact } from './Contact';
 
+type Props = {
+  onContactClick: () => void;
+};
 
-export const About: React.FC = () => {
+export const About: React.FC< { onContactClick: () => void }> = ({ onContactClick }) => {
     const [animate, setAnimate] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
   
     useEffect(() => {
       setAnimate(true);
@@ -18,8 +24,12 @@ export const About: React.FC = () => {
             <p>
                 Full Stack Software Engineer, based in San Francisco.
             </p>
-          </div>
-          <div className={styles.imageContainer}>
+            <button className={styles.contactButton} onClick={onContactClick}>
+                <span>Contact Me</span>
+                <span className={styles.arrow}>&gt;</span>
+            </button>
+        </div>
+        <div className={styles.imageContainer}>
             <img className={styles.img} src="/test.jpeg" />
           </div>
         </div>

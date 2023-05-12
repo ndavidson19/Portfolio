@@ -2,7 +2,8 @@
 
 .aboutContainer {
     min-height: 100vh; /* Add this line to make the component take up the whole screen */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
     gap: 0.5rem; /* Adjust this value to change the space between the text and image */
@@ -37,3 +38,33 @@
       transform: translateX(0);
     }
   }
+
+  .contactButton {
+    border: 2px solid #000;
+    background: transparent;
+    padding: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .contactButton:hover {
+    padding: 10px 20px;
+  }
+  
+  .contactButton span {
+    transition: all 0.3s ease;
+  }
+  
+  .contactButton .arrow {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contactButton:hover .arrow {
+    transform: rotate(90deg);
+  }
+
+
+  
