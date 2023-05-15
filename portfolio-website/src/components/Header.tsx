@@ -16,9 +16,9 @@ export const Header: React.FC = () => {
     <header className={styles.headerContainer}>
       <h1>Nicholas Davidson</h1>
       <nav className={styles.nav}>
-        <a href="/" className={styles.link}>Home</a>
+        <a onClick={scrollToProjects} className={styles.link}>Home</a>
         <a onClick={scrollToProjects} style={{ cursor: 'pointer' }}>Projects</a>
-        <a href="/research" className={styles.link}>Research</a>
+        <a onClick={scrollToProjects} className={styles.link}>Research</a>
       </nav>
     </header>
   );

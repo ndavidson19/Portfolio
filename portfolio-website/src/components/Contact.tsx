@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import styles from '../styles/Contact.module.css';
 
+/* eslint-disable react/no-unescaped-entities */
+
+
 type Props = {
   isModalOpen: boolean;
   setIsModalOpen: (open: boolean) => void;

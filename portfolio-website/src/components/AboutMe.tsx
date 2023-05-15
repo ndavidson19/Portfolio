@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../styles/AboutMe.module.css';
 
 export const AboutMe: React.FC = () => {
-    const [selectedJob, setSelectedJob] = useState<number>(0); // Change 0 to 1
+    const [selectedJob, setSelectedJob] = useState<number | null>(0); // Change 0 to 1
 
   const jobDescriptions = [
     {
