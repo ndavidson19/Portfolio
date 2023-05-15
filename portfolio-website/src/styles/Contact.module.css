@@ -15,8 +15,8 @@
   position: relative; /* Add this line so that closeButton is positioned relative to modalContent */
   display: flex;
   width: 80%; /* Increase the width of the modal */
-  max-width: 800px; /* Increase the max-width if needed */
-  min-height: 60%; /* Increase the height of the modal */
+  max-width: 80%; /* Increase the max-width if needed */
+  min-height: 80%; /* Increase the height of the modal */
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -68,7 +68,7 @@
 }
 
 .inputGroup input {
-  width: 48%; /* Adjust as needed */
+  width: 45%; /* Adjust as needed */
 }
 
 .textarea {
@@ -80,7 +80,7 @@
   border-radius: 4px;
   background-color: #f0f0f0;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 3px;
 }
 
 

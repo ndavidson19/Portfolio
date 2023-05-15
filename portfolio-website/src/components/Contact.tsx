@@ -30,11 +30,7 @@ export const Contact: React.FC<Props> = ({ isModalOpen, setIsModalOpen }) => {
   return (
     <div
       className={styles.modal}
-      style={{ display: isModalOpen ? 'block' : 'none' }}
     >
-      <button className={styles.closeButton} onClick={() => setIsModalOpen(false)}>
-        X
-      </button>
       <div className={styles.modalContent}>
         <div className={styles.left}>
         <h2>Contact Information</h2>
@@ -56,6 +52,9 @@ export const Contact: React.FC<Props> = ({ isModalOpen, setIsModalOpen }) => {
           </div>
         </div>
         <div className={styles.right}>
+          <button className={styles.closeButton} onClick={() => setIsModalOpen(false)}>
+           X
+          </button>
           <form onSubmit={handleSubmit(showEmailInput ? onSubmit : handleNextClick)}>
             {!showEmailInput && (
               <>

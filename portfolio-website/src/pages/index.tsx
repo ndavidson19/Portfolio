@@ -20,7 +20,9 @@ export default function Home() {
       <Header />
       <main>
         <About onContactClick={handleContactClick}/>
-        < Contact isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+        {isModalOpen && (
+        <Contact isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+        )}        
         <AboutMe />
         <Projects />
         < Research/>
